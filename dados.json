@@ -1,0 +1,20 @@
+{
+    "Funcionarios":[
+        {
+            "id":1,
+            "Nome":"Leticia",
+            "Cargo":"estagio",
+            "Setor":"tecnologia",
+            "Turno":"Noite",
+            "Salário":1000
+        },
+        {
+            "id":2,
+            "Nome":"Leticia",
+            "Cargo":"estagio",
+            "Setor":"tecnologia",
+            "Turno":"Noite",
+            "Salário":1000
+        }
+    ]
+}

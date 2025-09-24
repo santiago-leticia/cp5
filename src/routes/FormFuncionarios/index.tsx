@@ -1,0 +1,6 @@
+
+
+type TypeNovo={
+    Nome:string;
+    
+}
