@@ -1,1 +1,6 @@
-import { useNavigate, useParams } from "react-router-dom"
+export default function Error(){
+
+    return(
+            <h1>Home</h1>
+    )
+}
