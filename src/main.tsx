@@ -5,15 +5,21 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './routes/Home/index.tsx'
 import Error from './routes/Error/index.tsx'
+import FormFuncionario from './routes/FormFuncionarios/index.tsx'
+import ListaFuncionarios from './routes/ListaFuncionario/index.tsx'
+
 const router= createBrowserRouter([
   {
     path:'/',
     element:<App/>,
     errorElement:<Error/>,
-    children:[{
-      path:"/",
-      element:<Home/>
-    }]
+    children:[
+      {path:"/",element:<Home/>},
+      {path:"/lista",element:<ListaFuncionarios/>},
+      {path:"/incluir",element:<FormFuncionario/>},
+      {path:"/editar/:id",element:<FormFuncionario/>}
+    
+    ]
   }
 ])
 
