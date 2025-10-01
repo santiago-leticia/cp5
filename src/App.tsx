@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
 import './App.css'
-import Menu from './components/Menu'
+import Cabecalho from './components/Cabecalho'
 import Rodape from './components/Rodape'
 function App(){
 
   return(
     <>
-      <Menu/>
+      <Cabecalho/>
       <Outlet/>
       <Rodape/>
     </>
