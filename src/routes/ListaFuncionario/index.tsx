@@ -10,7 +10,7 @@ type TypeFuncionarios ={
     Salario:number
 }
 
-export default function ListaFuncionarios(){
+export default function ListaFuncionario(){
 
     const [funcionario, setFuncionario] = useState<TypeFuncionarios[]>([])
 
@@ -28,39 +28,36 @@ export default function ListaFuncionarios(){
     }
 
     return(
-        <div>
-            <h1>Lista de funcionario</h1>
+        <main>
+            <div>
+                <h1>Lista de funcionario</h1>
 
-            <Link to={'/incluir'}>Inserir Funcionario</Link>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th><th>Cargo</th><th>Setor</th><th>Turno</th><th>Salario</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        funcionario.map(prod=>(
-                            <tr key={prod.id}>
-                                <td>{prod.Nome}</td>
-                                <td>{prod.Cargo}</td>
-                                <td>{prod.Setor}</td>
-                                <td>{prod.Turno}</td>
-                                <td>{prod.Salario.toFixed(2)}</td>
-                                <td>
-                                    <Link to={`/editar/${prod.id}`}>Editar</Link>
-                                    <button  onClick={()=>handleDelete(prod.id)}>Excluir</button>
-                                </td>
-                            </tr>
-                        ))
-                    }
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colSpan={4}></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
+                <Link to={'/incluir'}>Inserir Funcionario</Link>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th><th>Cargo</th><th>Setor</th><th>Turno</th><th>Salario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            funcionario.map(prod=>(
+                                <tr key={prod.id}>
+                                    <td>{prod.Nome}</td>
+                                    <td>{prod.Cargo}</td>
+                                    <td>{prod.Setor}</td>
+                                    <td>{prod.Turno}</td>
+                                    <td>{prod.Salario.toFixed(2)}</td>
+                                    <td>
+                                        <Link to={`/editar/${prod.id}`}>Editar</Link>
+                                        <button  onClick={()=>handleDelete(prod.id)}>Excluir</button>
+                                    </td>
+                                </tr>
+                            ))
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </main>
     )
 }

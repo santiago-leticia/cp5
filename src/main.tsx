@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './routes/Home/index.tsx'
 import Error from './routes/Error/index.tsx'
 import FormFuncionario from './routes/FormFuncionarios/index.tsx'
-import ListaFuncionarios from './routes/ListaFuncionario/index.tsx'
+import ListaFuncionario from './routes/ListaFuncionario/index.tsx'
 
 const router= createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router= createBrowserRouter([
     errorElement:<Error/>,
     children:[
       {path:"/",element:<Home/>},
-      {path:"/lista",element:<ListaFuncionarios/>},
+      {path:"/lista",element:<ListaFuncionario/>},
       {path:"/incluir",element:<FormFuncionario/>},
       {path:"/editar/:id",element:<FormFuncionario/>}
     
