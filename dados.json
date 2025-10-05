@@ -1,5 +1,5 @@
 {
-    "Funcionarios":[
+    "funcionario":[
         {
             "id":1,
             "Nome":"Leticia",
@@ -14,7 +14,7 @@
             "Cargo":"estagio",
             "Setor":"tecnologia",
             "Turno":"Noite",
-            "Salário":1000
+            "Salario":1000
         }
     ]
 }
